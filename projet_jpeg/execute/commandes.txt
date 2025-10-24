@@ -1,0 +1,21 @@
+gcc -Iinclude jpeg2ppm.c flux_bits.c interpreteur_jpeg.c huffmann_table.c iDCT.c zig_zag.c extraction_bloc.c ecriture_ppm.c quantification_inverse.c YCbCr_to_RGB.c upsampling.c -lm -o jpeg2ppm
+
+./jpeg2ppm "invader.jpeg" > invader.ppm
+
+./jpeg2ppm "poupoupidou_bw.jpg" > poupoupidou_bw.ppm
+
+./jpeg2ppm "gris.jpg" > gris.ppm
+
+./jpeg2ppm "bisou.jpeg" > bisou.ppm
+
+./jpeg2ppm "albert.jpg" > albert.ppm
+
+./jpeg2ppm "zig-zag.jpg" > zig-zag.ppm
+
+./jpeg2ppm "thumbs.jpg" > thumbs.ppm
+
+./jpeg2ppm "shaun_the_sheep.jpeg" > shaun_the_sheep.ppm
+
+./jpeg2ppm "horizontal.jpg" > horizontal.ppm
+
+./jpeg2ppm "vertical.jpg" > vertical.ppm
